@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | нож</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center; /* Centers form vertically */
+            justify-content: center; /* Centers form horizontally */
+            font-family: Arial, sans-serif;
+            background: #000; /* Fallback for background image */
+        }
+
+        #image-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(50%); /* Darkens the background */
+        }
+
+        form {
+            form {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border: 1px solid #ff0000; /* Red glowing border */
+    box-shadow: 0 0 15px #ff0000; /* Red glow effect */
+    width: 300px; /* Adjusts the width of the form */
+    padding: 2rem; /* Ensures equal spacing inside the form */
+    color: #e5e5e5; /* Text color */
+    text-align: center; /* Centers content */
+    border-radius: 10px; /* Smooth corners */
+    box-sizing: border-box; /* Padding is included in the width/height */
+}
+
+        }
+
+        .main-t {
+            margin-bottom: 1.5rem;
+            color: #ff0000; /* Red text for scary effect */
+            text-shadow: 0 0 10px #ff0000; /* Glowing red text */
+        }
+
+        .box-inp {
+            margin-bottom: 1rem;
+        }
+
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #111; /* Dark background */
+            color: #e5e5e5; /* Light text */
+            box-shadow: 0 0 5px #ff0000; /* Slight red glow */
+            text-align: center; /* Centers text inside the button */
+        }
+
+        input[type="password"]:focus,
+        input[type="submit"]:hover {
+            outline: none;
+            background: linear-gradient(to right, #550000, #ff0000); /* Red gradient */
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 15px #ff0000; /* More intense glow on hover */
+        }
+
+        input[type="submit"] {
+            font-weight: bold;
+            text-align: center; /* Ensure text is centered */
+        }
+
+        p {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        p a {
+            color: #ff0000; /* Red link */
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-shadow: 0 0 5px #ff0000;
+        }
+
+        @media(max-width: 400px) {
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Image -->
+    <img id="image-background" src="https://i.postimg.cc/g2TyMvrP/anonymous-dark-veni-vidi-vici.webp" alt="Background Image">
+
+    <!-- Login Form -->
+    <form action="/" method="post">
+        <h2 class="main-t">нож | Nozh</h2>
+        <div class="box-inp">
+            <input type="password" placeholder="Username" name="username" required>
+        </div>
+        <div class="box-inp">
+            <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <div class="box-inp">
+            <input type="submit" value="in·i·ti·ate">
+        </div>
+        <p>
+            <a href="#">Mongoose (нож | Nozh)</a>
+        </p>
+    </form>
+</body>
+
+</html>
